@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+
+        }
+
+        body>div {
+
+            background: black;
+            color: white;
+            text-align: center;
+            padding: 12px 0px;
+
+
+        }
+
+        div button {
+            border-radius: 12px;
+            background-color: red;
+            color: white;
+            padding: 5px;
+            border: none;
+        }
+
+        nav>ol {
+            display: flex;
+            background-color: hsl(0deg 79% 63%);
+            color: white;
+            list-style: none;
+
+        }
+
+        nav ol li {
+            flex-grow: 0.3;
+            line-height: 56px;
+        }
+
+        nav ol li:first-child {
+            flex-grow: 2;
+
+        }
+
+        nav ol li:first-child img {
+            vertical-align: middle;
+        }
+
+        section {
+            position: relative;
+        }
+
+        section img {
+            width: 100%;
+            height: 370px;
+
+        }
+
+        .overlap {
+            position: absolute;
+            top: 70px;
+            left: 215px;
+            width: 250px;
+        }
+
+        .overlap h1 {
+            font-size: 3em;
+        }
+
+        .transparent {
+            background: transparent;
+            color: white;
+            border-radius: 5px;
+            border: 2px solid white;
+            padding: 10px 16px;
+
+        }
+
+        .overlap h1+p {
+            margin: 10px 0px;
+        }
+
+        .i-block {
+            display: inline-block;
+            width: 49%;
+            margin-top: 10px;
+        }
+
+        #i-block-container {
+            width: 63%;
+            margin: auto;
+
+        }
+
+        #box-container {
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+        }
+
+        .box {
+            margin-top: 30px;
+            width: 250px;
+            height: 250px;
+            background-color: black;
+            color: rgb(238, 236, 234);
+            position: relative;
+
+        }
+
+        .box h2 {
+            padding-top: 20px;
+            padding-left: 20px;
+        }
+
+        .box h1 {
+            position: absolute;
+            margin: auto;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            height: fit-content;
+            text-align: center;
+
+        }
+
+        .circle {
+            border: 4px solid white;
+            position: absolute;
+            right: -27px;
+            bottom: -18px;
+            width: 71px;
+            height: 71px;
+            border-radius: 71px;
+        }
+
+        .triangle {
+            width: 0;
+            height: 0;
+            position: absolute;
+            right: -3px;
+            bottom: -3px;
+            border-left: 33px solid transparent;
+            border-bottom: 73px solid rgb(253, 253, 253);
+            border-right: 33px solid transparent;
+        }
+
+        .triangle1 {
+
+            width: 0;
+            height: 0;
+            position: absolute;
+            right: 2px;
+            bottom: 0px;
+            border-top: 0px;
+            border-left: 28px solid transparent;
+            border-bottom: 62px solid rgb(14, 13, 13);
+            border-right: 28px solid transparent;
+
+        }
+
+        .Rectangle {
+            position: absolute;
+            right: -17px;
+            bottom: -17px;
+            width: 71px;
+            height: 71px;
+            border: 4px solid white;
+        }
+
+        #iblock-container2 {
+            width: 63%;
+            margin: auto;
+        }
+
+        .i-block2 {
+            display: inline-block;
+            width: 33%;
+            margin-top: 30px;
+            margin-bottom: 40px;
+
+        }
+
+        #last {
+            position: relative;
+        }
+
+        .overlap1 {
+            position: absolute;
+            top: 70px;
+            /* left: 215px; */
+            right: 157px;
+            width: 300px;
+            text-align: right;
+        }
+
+        .overlap1 h1 {
+            font-size: 30px;
+        }
+
+        .overlap1 h1+p {
+            margin: 10px 0px;
+        }
+
+        .lastbutton {
+            background: white;
+            color: rgb(20, 20, 20);
+            border-radius: 5px;
+            border: 2px solid rgb(12, 12, 12);
+            padding: 10px 16px;
+        }
+
+        #bottom {
+            margin-top: 30px;
+            margin-bottom: 30px;
+            margin-left: 245px;
+
+        }
+        #bottom p{
+font-size: 0.8em;
+        }
+        #bottom h1{
+            font-size: 2em;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <button> Some detail here </button> <span> How we are responding to Covid 19 </span>
+    </div>
+    <header>
+        <nav>
+            <ol>
+                <li> <img src="logo.jpeg" alt=""></li>
+                <li> Landing</li>
+                <li> About</li>
+                <li> Contact</li>
+                <li> Dashboard</li>
+                <li>Blog</li>
+                <li> Career</li>
+            </ol>
+        </nav>
+    </header>
+    <section>
+        <div>
+            <img src="hero.png" alt="">
+            <div class="overlap">
+                <h1> Serving You</h1>
+                <h1> since 1989.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elitLorem ipsum dolor sit amet consectetur
+                    adipisicing elit.</p>
+
+                <button class="transparent"> View Details </button>
+
+
+            </div>
+            <div id="i-block-container">
+                <div class="i-block">
+                    <h5>Ways to Support</h5>
+                    <h1>Support Acme Outdoors.</h1>
+                </div>
+                <div class="i-block">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quia, nisi suscipit saepe error
+                        veritatis possimus laborum.</p>
+                </div>
+            </div>
+            <div id="box-container">
+                <div class="box">
+                    <h2>01</h2>
+                    <h1>SHOP PRODUCTS</h1>
+                    <div class="circle"></div>
+                </div>
+                <div class="box">
+                    <h2> 02</h2>
+                    <h1>Donate</h1>
+                    <div class="triangle"> </div>
+                    <div class="triangle1"> </div>
+                </div>
+                <div class="box">
+                    <h2> 03</h2>
+                    <h1> BUY GIFT CARDS</h1>
+                    <div class="Rectangle"> </div>
+                </div>
+            </div>
+            <div id="iblock-container2">
+                <div class="i-block2"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum, perspiciatis!
+                    Beatae cupiditate earum quia porro aperiam expedita nobis deleniti? Non, quam tenetur. Similique
+                    harum alias eaque, est id at obcaecati.</div>
+                <div class="i-block2"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi ipsum facilis
+                    ipsa molestias, a veritatis expedita veniam perferendis ullam saepe officiis alias laudantium,
+                    labore rerum deserunt facere soluta fugiat modi?</div>
+                <div class="i-block2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi ipsum facilis
+                    ipsa molestias, a veritatis expedita veniam perferendis ullam saepe officiis alias laudantium,
+                    labore rerum deserunt facere soluta fugiat modi?</div>
+            </div>
+
+            <div id="last">
+                <img src="hero2.png" alt="">
+                <div class="overlap1">
+                    <h1> How we're keeping you </h1>
+                    <h1> safe during COVID-19</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elitLorem ipsum dolor sit amet consectetur
+                        adipisicing elit.</p>
+                    <button class="lastbutton"> Explore Our Statements </button>
+                </div>
+            </div>
+
+            <div id="bottom">
+                <p> Shop Timing</p>
+                <h1> Open 24/7/365. </h1>
+            </div>
+
+
+
+
+    </section>
+</body>
+
+</html>
